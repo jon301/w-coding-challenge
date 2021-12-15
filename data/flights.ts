@@ -1,6 +1,6 @@
 import { default as data } from './flights.json';
 
-type Flight = {
+export type Flight = {
   id: string;
   flightNumber: string;
   airline: string;
@@ -13,16 +13,16 @@ type Flight = {
   arrivalAirport: string;
 };
 
-type Airport = {
+export type Airport = {
   name: string;
   city: string;
 };
 
-type Airline = {
+export type Airline = {
   name: string;
 };
 
-type Flights = {
+export type Flights = {
   data: readonly Flight[];
   included: Record<string, Airport | Airline>;
 };
