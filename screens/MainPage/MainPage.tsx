@@ -1,6 +1,7 @@
 import { NextPage } from 'next';
 import Head from 'next/head';
 import React from 'react';
+import { flights } from '../../data/flights';
 
 export const MainPage: NextPage = () => {
   return (
@@ -10,7 +11,9 @@ export const MainPage: NextPage = () => {
         <meta name="description" content="Coding Challenge" />
       </Head>
 
-      <main>Coding Challenge</main>
+      <main className="p-4">
+        <pre>{JSON.stringify(flights, null, 2)}</pre>
+      </main>
     </div>
   );
 };
