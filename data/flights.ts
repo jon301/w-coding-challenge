@@ -1,4 +1,4 @@
-import * as data from './flights.json';
+import { default as data } from './flights.json';
 
 type Flight = {
   id: string;
